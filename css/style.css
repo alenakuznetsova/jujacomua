@@ -1,0 +1,57 @@
+@font-face {
+    font-family: AvenirNext-Regular; 
+    src: url("../fonts/AvenirNext-Regular.ttf");
+    letter-spacing: normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: AvenirNext-DemiBold; 
+    src: url("../fonts/AvenirNext-DemiBold.ttf");
+    letter-spacing: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    font-family: AvenirNext-Regular, arial;
+    font-size: 13pt;
+    font-weight: 720;
+    text-align: center;
+}
+#section-offer {
+    visibility: hidden;
+}
+.price-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 50px;
+	background-color: #e3e3e3;
+}
+
+.btnBuy:hover{
+    display: inline-block;
+    font-size: 14pt;
+    border-radius: 30px;
+    background: #fff200;
+    color: #333;
+    border: 1px solid #bbb;
+    border-color: #888;
+    outline: 0;
+    font-size: 14pt;
+    text-decoration: none;
+    color: black;
+    padding: 6px 100px;
+    text-align: center;
+ }
+.btnBuy{
+    display: inline-block;
+    font-size: 14pt;
+    border-radius: 30px;
+    background: #fff200;
+    border: 1px solid #bbb;
+    font-size: 14pt;
+    text-decoration: none;
+    color: black;
+    padding: 6px 100px;
+    text-align: center;
+ }

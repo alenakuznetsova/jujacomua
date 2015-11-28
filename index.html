@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Design Patterns</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+ 
+  <!--Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+</head>
+<body>
+<h1>Как начать использовать шаблоны проектирования </h1>
+<h2>8 декабря 2015, 19:00 (Киевское время)</h2>
+
+<div id="yt_player">
+</div>
+<section id="section-offer">
+    <div class="container">
+     	<div class="row">
+        	<div class="one-half column price-box">
+            	<h3>54 шаблона проектирования</h3>
+                <h4>Со скидкой 80%</h4>
+                <p>
+	                <a class="btnBuy" href="https://www.todoga.com/pay/?id=5651934161666048">Купить за 27$
+	                </a>
+                </p>
+            </div>
+            <div class="one-half column price-box">
+	           	<h3>10 шаблонов проектирования</h3>
+	            <h4>Со скидкой 80%</h4>
+	            <p>
+	            	<a class="btnBuy" href="https://www.todoga.com/pay/?id=5651934161666048">Купить за 7$</a>
+	            </p>
+	        </div>
+	    </div> 
+	</div>  
+</section> 
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script type="text/javascript">
+	var player,
+    time_update_interval = 0;
+	function onYouTubeIframeAPIReady() {
+		player = new YT.Player( 'yt_player', 
+		{  
+			width: '880',
+			height: '450',
+			rel: 0,
+			showinfo: 0,
+			videoId: 'QUcFWOoR77Y',
+			events: {
+				'onReady': youtubeready
+			}
+		});
+	}
+
+	function youtubeready() {
+	    updateTimerDisplay();
+	    clearInterval(time_update_interval);
+	    time_update_interval = setInterval(function () {
+	        updateTimerDisplay();
+	    }, 1000);
+	}
+
+	function updateTimerDisplay(){
+		if (player.getCurrentTime() > 5.0 ) {
+			document.getElementById('section-offer').style.visibility = 'visible';	
+		}
+	}
+</script>
+</body>
+</html>
